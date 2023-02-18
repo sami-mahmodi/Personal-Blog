@@ -4,6 +4,7 @@ import classes from "./post-item.module.css";
 
 export default function PostItem(props) {
   const { title, image, excerpt, date, slug } = props.post;
+  const pathLink = `/posts/${slug}`;
 
   const formattedDate = new Date(date).toLocaleDateString("en-US", {
     day: "numeric",
@@ -15,10 +16,16 @@ export default function PostItem(props) {
 
   return (
     <li className={classes.post}>
-      <Link>
+      <Link href={pathLink}>
         <a>
           <div className={classes.image}>
-            <Image src={imagePath} alt={title} width={300} height={200} />
+            <Image
+              src={imagePath}
+              alt={title}
+              width={300}
+              height={200}
+              layout={"responsive"}
+            />
           </div>
           <div className={classes.content}>
             <h3>{title}</h3>
