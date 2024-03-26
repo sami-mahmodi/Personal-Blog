@@ -62,3 +62,34 @@ button {
   font: inherit;
   cursor: pointer;
 }
+input{
+  padding: 8px 4px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: 1rem;
+}
+textarea{
+  outline: none;
+  padding: 8px 4px;
+  border-radius: 4px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+button{
+  margin-top: 14px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #044164;
+  font-size: larger;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+button:hover{
+  background-color: #0d6ba1;
+  
+}
