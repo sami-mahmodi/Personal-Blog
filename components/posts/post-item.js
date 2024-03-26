@@ -17,7 +17,6 @@ export default function PostItem(props) {
   return (
     <li className={classes.post}>
       <Link href={pathLink}>
-        <a>
           <div className={classes.image}>
             <Image
               src={imagePath}
@@ -32,7 +31,6 @@ export default function PostItem(props) {
             <time>{formattedDate}</time>
             <p>{excerpt}</p>
           </div>
-        </a>
       </Link>
     </li>
   );
